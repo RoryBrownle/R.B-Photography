@@ -28,7 +28,7 @@
 </head>
 <body>
     <h1>Welcome to My Photography Portfolio</h1>
-    <p>Explore my latest shots below!</p>
+    <p>I take photos of Armoured vehicles from any era</p>
     <div class="gallery">
         <img src="photo1.jpg" alt="Photo 1">
         <img src="photo2.jpg" alt="Photo 2">
