@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Portfolio</title>
+    <title>Armored Vehicle Photography</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #222;
+            color: white;
         }
         h1 {
-            color: #333;
+            color: #ff9900;
         }
         .gallery {
             display: flex;
@@ -19,26 +20,28 @@
             justify-content: center;
         }
         .gallery img {
-            width: 200px;
+            width: 250px;
             height: auto;
             margin: 10px;
             border-radius: 8px;
+            border: 2px solid #ff9900;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Photography Portfolio</h1>
-    <p>I take photos of Armoured vehicles from any era</p>
+    <h1>Armored Vehicle Photography Gallery</h1>
+    <p>Click on an image to see details!</p>
     <div class="gallery">
-        <img src="photo1.jpg" alt="Photo 1">
-        <img src="photo2.jpg" alt="Photo 2">
-        <img src="photo3.jpg" alt="Photo 3">
+        <img src="tank1.jpg" alt="Tank in action">
+        <img src="apc1.jpg" alt="Armored Personnel Carrier">
+        <img src="jeep1.jpg" alt="Military Jeep">
     </div>
 
     <script>
         document.querySelectorAll('.gallery img').forEach(img => {
             img.addEventListener('click', () => {
-                alert(`You clicked on ${img.alt}`);
+                alert(`You clicked on: ${img.alt}`);
             });
         });
     </script>
